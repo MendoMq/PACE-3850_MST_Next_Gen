@@ -1,8 +1,12 @@
 import React from "react";
+import "../App.css";
+import About from "../About.png"
 
 function AboutPage(){
     return (
-        <p>About Page</p>
+        <div>
+            <img src={About} id="aboutPrototype"/>
+        </div>
     );
 }
 

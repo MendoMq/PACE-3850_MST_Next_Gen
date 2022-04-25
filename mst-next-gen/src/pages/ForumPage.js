@@ -1,8 +1,12 @@
 import React from "react";
+import "../App.css";
+import Forum from "../Forum.png"
 
 function ForumPage(){
     return (
-        <p>Forum Page</p>
+        <div>
+            <img src={Forum} id="forumPrototype"/>
+        </div>
     );
 }
 

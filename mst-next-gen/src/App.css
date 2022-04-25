@@ -47,6 +47,14 @@
   flex-direction: column;
 }
 
+#SMSTStatement {
+  margin-left: 10px;
+}
+
+#SMSTStatementLink {
+  color: #e02b20;
+}
+
 #Header{
   display:flex;
   justify-content: space-evenly;
@@ -161,6 +169,6 @@
 }
 
 /* Media and Blog */
-#mediaAndBlogPrototype{
+#mediaAndBlogPrototype, #forumPrototype, #aboutPrototype{
   width: 100%;
 }

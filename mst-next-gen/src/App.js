@@ -16,7 +16,7 @@ import Footer from './Footer'
 function App() {
   return (
     <div class="container">
-      <p>MSTNG Proudly supported by <a href="https://supportmarianstreettheatre.com/">Support Marian St Theatre</a></p>
+      <p id="SMSTStatement">MSTNG is proudly supported by <a href="https://supportmarianstreettheatre.com/" id="SMSTStatementLink">Support Marian St Theatre</a></p>
       <div id="Header">
         <Link class="link" to="/">Home</Link>
         <Link class="link" to="/mediablog">Media and Blog</Link>
