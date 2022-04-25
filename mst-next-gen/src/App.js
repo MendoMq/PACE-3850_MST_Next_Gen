@@ -1,8 +1,10 @@
 import React from 'react'
+import './App.css'
 import HomePage from './pages/HomePage'
 import AboutPage from './pages/AboutPage'
 import MediaPage from './pages/MediaPage'
 import ForumPage from './pages/ForumPage'
+import logo from './logo.jpg'
 import {
   BrowserRouter as Router,
   Routes,
@@ -12,12 +14,15 @@ import {
 
 function App() {
   return (
-    <div>
-      <p>Test</p>
-      <Link to="/">Home</Link>
-      <Link to="/media">Media</Link>
-      <Link to="/forum">Forum</Link>
-      <Link to="/about">About</Link>
+    <div class="container">
+      <p>MSTNG Proudly supported by <a href="https://supportmarianstreettheatre.com/">Support Marian St Theatre</a></p>
+      <div id="Header">
+        <Link class="link" to="/">Home</Link>
+        <Link class="link" to="/media">Media</Link>
+        <img src={logo} alt="LogoImage" height={200} width={250}/>
+        <Link class="link" to="/forum">Forum</Link>
+        <Link class="link" to="/about">About</Link>
+      </div>
       <Routes>
         <Route path="/about" element={<AboutPage/>}/>
 
