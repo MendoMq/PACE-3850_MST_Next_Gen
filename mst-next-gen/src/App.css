@@ -62,4 +62,102 @@
   padding-left : 60px;
   padding-top : 15px;
   padding-bottom : 15px;
+  text-decoration: none;
+  color: black;
 }
+
+/* Home Page */
+#banner {
+  position: relative;
+}
+
+#bannerImage {
+  opacity: 0.6;
+}
+
+#bannerContent {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: fit-content;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+#bannerText {
+  font-size: 6vw;
+}
+
+#colouredBannerText {
+  color: #e02b20;
+}
+
+#bannerButtons {
+  display: flex;
+  flex-direction: column;
+}
+
+#login, #register{
+  /* position: absolute; */
+  margin: 10px;
+}
+
+#homePageMainContent {
+  width: 80%;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+#homePageText {
+  width: 60%;
+  padding: 10px;
+
+}
+
+#title {
+  color: #e02b20;
+  font-size: 26px;
+}
+
+.intro {
+  font-size: 22px;
+}
+
+#theatrePlus {
+  color: #e02b20
+}
+
+#sideBar{
+  width: 35%;
+}
+
+#SMSTTile {
+  width: 95%;
+  height: 250px;
+  background-color: #e02b20;
+  border-radius: 25px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.SMSTTileText {
+  text-align: center;
+  color: white;
+  margin: 0 10px 0 10px;
+  font-size: 20px;
+}
+
+#SMSTTileLink {
+  color: white;
+}
+
