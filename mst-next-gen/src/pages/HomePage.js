@@ -1,8 +1,23 @@
 import React from "react";
+import "../App.css";
 
 function HomePage(){
     return (
-        <p>Home Page</p>
+        <div>
+            <div id="banner">
+
+            </div>
+            <div id="homePageMainContent">
+                <div id="homePageText">
+                    
+                </div>
+                <aside id="sideBar">
+                    <div id="SMSTLink">
+
+                    </div>
+                </aside>
+            </div>            
+        </div>
     );
 }
 
