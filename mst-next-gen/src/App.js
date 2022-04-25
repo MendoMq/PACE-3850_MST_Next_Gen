@@ -11,7 +11,7 @@ import {
   Route,
   Link
 } from 'react-router-dom'
-import "./App.css";
+import Footer from './Footer'
 
 function App() {
   return (
@@ -33,6 +33,8 @@ function App() {
 
         <Route path="/" element={<HomePage/>}/>
       </Routes>
+
+      <Footer/>
     </div>
   );
 }
