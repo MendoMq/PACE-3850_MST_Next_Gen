@@ -2,7 +2,7 @@ import React from 'react'
 import './App.css'
 import HomePage from './pages/HomePage'
 import AboutPage from './pages/AboutPage'
-import MediaPage from './pages/MediaPage'
+import MediaBlogPage from './pages/MediaBlogPage'
 import ForumPage from './pages/ForumPage'
 import logo from './logo.jpg'
 import {
@@ -19,7 +19,7 @@ function App() {
       <p>MSTNG Proudly supported by <a href="https://supportmarianstreettheatre.com/">Support Marian St Theatre</a></p>
       <div id="Header">
         <Link class="link" to="/">Home</Link>
-        <Link class="link" to="/media">Media</Link>
+        <Link class="link" to="/mediablog">Media and Blog</Link>
         <img src={logo} alt="LogoImage" height={200} width={250}/>
         <Link class="link" to="/forum">Forum</Link>
         <Link class="link" to="/about">About</Link>
@@ -27,7 +27,7 @@ function App() {
       <Routes>
         <Route path="/about" element={<AboutPage/>}/>
 
-        <Route path="/media" element={<MediaPage/>}/>
+        <Route path="/mediablog" element={<MediaBlogPage/>}/>
 
         <Route path="/forum" element={<ForumPage/>}/>
 
