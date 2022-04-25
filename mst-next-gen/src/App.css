@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
 * {
   font-family: 'Abel', Helvetica, Arial, Lucida, sans-serif;
 }
@@ -37,38 +38,31 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 
 }
 
-.container{
+.container {
   flex-direction: column;
 }
 
-#SMSTStatement {
-  margin-left: 10px;
-}
-
-#SMSTStatementLink {
-  color: #e02b20;
-}
-
-#Header{
-  display:flex;
+#Header {
+  display: flex;
   justify-content: space-evenly;
 }
 
-.link{
-  display:flex;
+.link {
+  display: flex;
   align-self: center;
   border-top: 2px solid black;
   border-bottom: 2px solid black;
-  padding-right : 60px;
-  padding-left : 60px;
-  padding-top : 15px;
-  padding-bottom : 15px;
+  padding-right: 60px;
+  padding-left: 60px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   text-decoration: none;
   color: black;
 }
@@ -108,7 +102,8 @@
   flex-direction: column;
 }
 
-#login, #register{
+#login,
+#register {
   /* position: absolute; */
   margin: 10px;
 }
@@ -141,7 +136,7 @@
   color: #e02b20
 }
 
-#sideBar{
+#sideBar {
   width: 35%;
 }
 
@@ -169,6 +164,23 @@
 }
 
 /* Media and Blog */
-#mediaAndBlogPrototype, #forumPrototype, #aboutPrototype{
+#mediaAndBlogPrototype {
   width: 100%;
+}
+
+
+
+.userFormBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  box-sizing: border-box;
+
+}
+
+.userFormBox_form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }

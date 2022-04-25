@@ -12,29 +12,36 @@ import {
   Link
 } from 'react-router-dom'
 import Footer from './Footer'
+import LoginPage from './pages/LoginPage'
+import RegisterPage from './pages/RegisterPage'
 
 function App() {
   return (
     <div class="container">
-      <p id="SMSTStatement">MSTNG is proudly supported by <a href="https://supportmarianstreettheatre.com/" id="SMSTStatementLink">Support Marian St Theatre</a></p>
+      <p>MSTNG Proudly supported by <a href="https://supportmarianstreettheatre.com/">Support Marian St Theatre</a></p>
       <div id="Header">
         <Link class="link" to="/">Home</Link>
         <Link class="link" to="/mediablog">Media and Blog</Link>
-        <img src={logo} alt="LogoImage" height={200} width={250}/>
+        <img src={logo} alt="LogoImage" height={200} width={250} />
         <Link class="link" to="/forum">Forum</Link>
         <Link class="link" to="/about">About</Link>
       </div>
       <Routes>
-        <Route path="/about" element={<AboutPage/>}/>
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/register" element={<RegisterPage />} />
 
-        <Route path="/mediablog" element={<MediaBlogPage/>}/>
+        <Route path="/about" element={<AboutPage />} />
 
-        <Route path="/forum" element={<ForumPage/>}/>
+        <Route path="/mediablog" element={<MediaBlogPage />} />
 
-        <Route path="/" element={<HomePage/>}/>
+        <Route path="/forum" element={<ForumPage />} />
+
+        <Route path="/" element={<HomePage />} />
+
+
       </Routes>
 
-      <Footer/>
+      <Footer />
     </div>
   );
 }
