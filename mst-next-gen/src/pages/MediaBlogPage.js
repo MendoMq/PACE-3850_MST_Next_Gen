@@ -7,20 +7,26 @@ function MediaBlogPage(){
         <div>
             <div id="mediaBlogContainer">
                 <div id="blogContainer">
-                    <p class="mediaBlogTitle">Blog</p>
+                    <p className="mediaBlogTitle">Blog</p>
                     <div id="blogPosts"></div>
                 </div>
                 <div id="mediaContainer">
-                    <p class="mediaBlogTitle">Media</p>
-                    <div id="mediaTiles"></div>
+                    <p className="mediaBlogTitle">Media</p>
+                    <div id="mediaTilesContainer">
+                        <p class="mediaArrows">&#8249;</p>
+                        <iframe id="mediaTiles"
+                            src="https://www.youtube.com/embed/0v146jfbwdg">
+                        </iframe>
+                        <p class="mediaArrows">&#8250;</p>
+                    </div>
                     <div id="mediaLivestreams">
                     <div id="recentLivestreams">
-                        <p class="livestreamTitle">Recent Livestreams</p>
-                        <p class="livestreamListing"><a href="">December 2021</a></p>
+                        <p className="livestreamTitle">Recent Livestreams</p>
+                        <p className="livestreamListing"><a href="">December 2021</a></p>
                     </div>
                     <div id="upcomingLivestreams">
-                        <p class="livestreamTitle">Upcoming Livestreams</p>
-                        <p class="livestreamListing"><a href="">June 2022</a></p>
+                        <p className="livestreamTitle">Upcoming Livestreams</p>
+                        <p className="livestreamListing"><a href="">June 2022</a></p>
                     </div>
                     </div>
                 </div>
