@@ -74,6 +74,7 @@
 
 #bannerImage {
   opacity: 0.6;
+  min-height: 560px;
 }
 
 #bannerContent {
@@ -164,12 +165,82 @@
 }
 
 /* Media and Blog */
-#mediaAndBlogPrototype {
-  width: 100%;
+#mediaBlogContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#blogContainer {
+  width:48%;
+  height: 800px;
+  border-left: 2px solid black;
+}
+
+.mediaBlogTitle {
+  color: #e02b20;
+  font-size: 26px;
+  margin-left: 20px;
+}
+
+#blogPosts {
+  width: 75%;
+  height:250px;
+  background-color: gray;
+  margin-left: 20px;
+}
+
+#mediaContainer {
+  width:48%;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  height: 800px;
+}
+
+#mediaTilesContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#mediaTiles {
+  width: 85%;
+  height: 315px;
+}
+
+.mediaArrows{
+  font-size: 60px;
+  margin:5px;
+  cursor: pointer;
+}
+
+#mediaLivestreams {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-around;
+}
+
+.livestreamTitle{
+  color: #e02b20;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.livestreamListing{
+  margin-top: 10px;
+  
+}
+
+.livestreamListing a{
+  color: black;
+}
+
+.livestreamListing a:active{
+  color: black;
 }
 
 
-
+/* Forum */
 .userFormBox {
   display: flex;
   justify-content: center;
