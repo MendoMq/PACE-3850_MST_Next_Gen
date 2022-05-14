@@ -1,9 +1,9 @@
 import React from 'react'
 import './App.css'
-import HomePage from './Pages/HomePage'
-import AboutPage from './Pages/AboutPage'
-import MediaBlogPage from './Pages/MediaBlogPage'
-import ForumPage from './Pages/ForumPage'
+import HomePage from './pages/HomePage'
+import AboutPage from './pages/AboutPage'
+import MediaBlogPage from './pages/MediaBlogPage'
+import ForumPage from './pages/ForumPage'
 import logo from './logo.jpg'
 import {
   BrowserRouter as Router,
@@ -12,8 +12,9 @@ import {
   Link
 } from 'react-router-dom'
 import Footer from './Footer'
-import LoginPage from './Pages/LoginPage'
-import RegisterPage from './Pages/RegisterPage'
+import LoginPage from './pages/LoginPage'
+import RegisterPage from './pages/RegisterPage'
+import ForumDetail from './pages/ForumDetail'
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
         <Route path="/mediablog" element={<MediaBlogPage />} />
 
         <Route path="/forum" element={<ForumPage />} />
+        <Route path="/forumDetail" element={<ForumDetail />} />
 
         <Route path="/" element={<HomePage />} />
 
