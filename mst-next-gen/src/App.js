@@ -4,7 +4,7 @@ import HomePage from './Pages/HomePage'
 import AboutPage from './Pages/AboutPage'
 import MediaBlogPage from './Pages/MediaBlogPage'
 import ForumPage from './Pages/ForumPage'
-import logo from './logo.jpg'
+import logo from './Media/logo.jpg';
 import {
   BrowserRouter as Router,
   Routes,
