@@ -12,7 +12,6 @@ import {
   Link
 } from 'react-router-dom'
 import Footer from './Footer'
-//import Footerprototype from './Footerprototype'
 import LoginPage from './Pages/LoginPage'
 import RegisterPage from './Pages/RegisterPage'
 import ForumDetail from './Pages/ForumDetail'
