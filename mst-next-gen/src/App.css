@@ -433,18 +433,12 @@
   display: flex;
   /*flex-wrap: wrap; */
   justify-content: center;
-  padding-left: 400px;
-  padding-right: 300px;
-  height: 1100px;
 }
 
 #aboutContainer2 {
   display: flex;
   /*flex-wrap: wrap; */
   justify-content: center;
-  padding-left: 400px;
-  padding-right: 300px;
-  height: 600px;
 }
 
 #firstContainer {
