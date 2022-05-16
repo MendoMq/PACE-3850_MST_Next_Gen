@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 
 import "../App.css";
 import ReplyDialog from "../components/ReplyDialog";
-import Forum from "../Forum.png"
+import Forum from "../Media/Forum.png"
 
 function ForumPage(){
     const navigate = useNavigate();

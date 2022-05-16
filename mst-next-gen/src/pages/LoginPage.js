@@ -1,11 +1,16 @@
 import { useState } from "react";
 import "../App.css";
-import bannerImage from "../BannerPicture.jpg";
 import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { useRoutes } from 'react-router-dom';
+import {
+    BrowserRouter as Router,
+    Routes,
+    Route,
+    Link
+  } from 'react-router-dom'
 
 const theme = createTheme({
     status: {
@@ -31,6 +36,7 @@ function LoginPage() {
                 className="userFormBox"
             >
                 <div className="userFormBox_form">
+                    <p style={{textAlign:"center"}}>MSTNG Membership Login</p>
                     <TextField
                         required
                         id="outlined-required"
@@ -50,7 +56,7 @@ function LoginPage() {
 
                     <ThemeProvider theme={theme}>
                         <Button variant="contained" color="primary" id="login" style={{ maxWidth: '150px', maxHeight: '60px', minWidth: '120px', minHeight: '50px', fontSize: '16px', fontFamily: "'Abel', Helvetica, Arial, Lucida, sans-serif" }} >Login</Button>
-                        <Button variant="contained" color="primary" id="register" style={{ maxWidth: '150px', maxHeight: '60px', minWidth: '120px', minHeight: '50px', fontSize: '16px', fontFamily: "'Abel', Helvetica, Arial, Lucida, sans-serif" }}>Register</Button>
+                        <Button variant="contained" color="primary" id="register" style={{ maxWidth: '150px', maxHeight: '60px', minWidth: '120px', minHeight: '50px', fontSize: '16px', fontFamily: "'Abel', Helvetica, Arial, Lucida, sans-serif" }} component={Link} to="/register">Sign up</Button>
                     </ThemeProvider>
                 </div>
             </Box>

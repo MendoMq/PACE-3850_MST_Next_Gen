@@ -2,7 +2,6 @@ import React from 'react'
 import './App.css'
 import HomePage from './Pages/HomePage'
 import AboutPage from './Pages/AboutPage'
-//import About2 from './pages/AboutPagePrototype2'
 import MediaBlogPage from './Pages/MediaBlogPage'
 import ForumPage from './Pages/ForumPage'
 import logo from './logo.jpg'
@@ -41,8 +40,6 @@ function App() {
         <Route path="/forumDetail" element={<ForumDetail />} />
 
         <Route path="/" element={<HomePage />} />
-
-
       </Routes>
 
       <Footer />

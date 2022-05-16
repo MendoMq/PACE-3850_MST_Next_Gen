@@ -4,8 +4,6 @@ import profileplaceholder from "../profileplaceholder.png";
 import jonathoncoleman from "../jonathancoleman.jpg";
 import davidwilliamson from "../davidwilliamson.jpg";
 
-
-
 function AboutPage(){
         return (
             <div>
