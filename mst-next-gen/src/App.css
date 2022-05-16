@@ -184,10 +184,10 @@
 }
 
 #blogPosts {
-  width: 75%;
-  height:250px;
-  background-color: gray;
+  width: 85%;
   margin-left: 20px;
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 #mediaContainer {
@@ -203,7 +203,7 @@
   align-items: center;
 }
 
-#mediaTiles {
+.mediaTiles {
   width: 85%;
   height: 315px;
 }
