@@ -34,7 +34,7 @@ function RegisterPage() {
                     <TextField
                         required
                         id="outlined-required"
-                        label="UserName"
+                        label="Username"
                         defaultValue=""
                         style={{ margin: 10 }}
                     />
