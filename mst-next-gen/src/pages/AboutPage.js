@@ -1,6 +1,6 @@
 import React from "react";
 import "../App.css";
-import About from "../About.png"
+import About from "../Media/About.png"
 
 function AboutPage(){
     return (

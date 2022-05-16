@@ -1,7 +1,13 @@
 import React from "react";
 import "../App.css";
-import bannerImage from "../BannerPicture.jpg";
+import bannerImage from "../Media/BannerPicture.jpg";
 import Button from '@mui/material/Button';
+import {
+    BrowserRouter as Router,
+    Routes,
+    Route,
+    Link
+  } from 'react-router-dom'
 
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 
@@ -26,8 +32,8 @@ function HomePage(){
                     <p id="bannerText">The <span id="colouredBannerText">Next Gen</span>eration of Theatre</p>
                     <div id="bannerButtons">
                         <ThemeProvider theme={theme}>
-                            <Button variant="contained" color="primary" id="login" style={{maxWidth: '170px', maxHeight: '70px', minWidth: '170px', minHeight: '70px', fontSize: '26px', fontFamily: "'Abel', Helvetica, Arial, Lucida, sans-serif"}}>Login</Button>
-                            <Button variant="contained" color="primary" id="register" style={{maxWidth: '170px', maxHeight: '70px', minWidth: '170px', minHeight: '70px', fontSize: '26px', fontFamily: "'Abel', Helvetica, Arial, Lucida, sans-serif"}}>Register</Button>
+                            <Button variant="contained" color="primary" id="login" style={{maxWidth: '170px', maxHeight: '70px', minWidth: '170px', minHeight: '70px', fontSize: '26px', fontFamily: "'Abel', Helvetica, Arial, Lucida, sans-serif"}}component={Link} to="/login">Login</Button>
+                            <Button variant="contained" color="primary" id="register" style={{maxWidth: '170px', maxHeight: '70px', minWidth: '170px', minHeight: '70px', fontSize: '26px', fontFamily: "'Abel', Helvetica, Arial, Lucida, sans-serif"}} component={Link} to="/register">Register</Button>
                         </ThemeProvider>
                     </div>
                 </div>

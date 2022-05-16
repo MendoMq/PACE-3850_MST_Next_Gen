@@ -1,6 +1,6 @@
 import React from "react";
 import "../App.css";
-import MediaAndBlog from "../MediaAndBlog.png"
+import MediaAndBlog from "../Media/MediaAndBlog.png"
 
 function MediaBlogPage(){
     return (

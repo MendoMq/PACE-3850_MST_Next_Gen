@@ -4,7 +4,7 @@ import HomePage from './pages/HomePage'
 import AboutPage from './pages/AboutPage'
 import MediaBlogPage from './pages/MediaBlogPage'
 import ForumPage from './pages/ForumPage'
-import logo from './logo.jpg'
+import logo from './Media/logo.jpg'
 import {
   BrowserRouter as Router,
   Routes,
@@ -39,8 +39,6 @@ function App() {
         <Route path="/forumDetail" element={<ForumDetail />} />
 
         <Route path="/" element={<HomePage />} />
-
-
       </Routes>
 
       <Footer />
