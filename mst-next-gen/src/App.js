@@ -1,4 +1,5 @@
 import React from 'react'
+import {useState} from 'react'
 import './App.css'
 import HomePage from './Pages/HomePage'
 import AboutPage from './Pages/AboutPage'
@@ -16,7 +17,13 @@ import LoginPage from './Pages/LoginPage'
 import RegisterPage from './Pages/RegisterPage'
 import ForumDetail from './Pages/ForumDetail'
 
+
 function App() {
+
+  const [token, setToken] = useState();
+  if(!token){
+    return <LoginPage setToken={setToken}/>
+  }
   return (
     <div class="container">
       <p>MSTNG Proudly supported by <a href="https://supportmarianstreettheatre.com/">Support Marian St Theatre</a></p>
