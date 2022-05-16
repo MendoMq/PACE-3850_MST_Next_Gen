@@ -1,10 +1,10 @@
 import React from 'react'
 import './App.css'
-import HomePage from './pages/HomePage'
-import AboutPage from './pages/AboutPage'
-import MediaBlogPage from './pages/MediaBlogPage'
-import ForumPage from './pages/ForumPage'
-import logo from './Media/logo.jpg'
+import HomePage from './Pages/HomePage'
+import AboutPage from './Pages/AboutPage'
+import MediaBlogPage from './Pages/MediaBlogPage'
+import ForumPage from './Pages/ForumPage'
+import logo from './logo.jpg'
 import {
   BrowserRouter as Router,
   Routes,
@@ -12,9 +12,9 @@ import {
   Link
 } from 'react-router-dom'
 import Footer from './Footer'
-import LoginPage from './pages/LoginPage'
-import RegisterPage from './pages/RegisterPage'
-import ForumDetail from './pages/ForumDetail'
+import LoginPage from './Pages/LoginPage'
+import RegisterPage from './Pages/RegisterPage'
+import ForumDetail from './Pages/ForumDetail'
 
 function App() {
   return (
