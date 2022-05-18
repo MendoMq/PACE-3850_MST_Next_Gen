@@ -123,12 +123,12 @@ function ForumPage(){
                         </List>
                     </div>
                     <div className="self_container_r_d">
-                        <div className="self_red_title">Your Forum History</div>
-                        <div>
+                        <div className="self_red_title">Please Login to see your Forum history</div>
+                        {/* <div>
                             <p>14 Posts</p>
                             <p>78 Comments</p>
                             <p>45 likes</p>
-                        </div>
+                        </div> */}
                     </div>
                 </Grid>
             </Grid>

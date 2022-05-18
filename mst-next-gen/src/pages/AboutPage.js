@@ -33,7 +33,7 @@ function AboutPage(){
 
                 <div id="aboutContainer3">
                  <div id="descriptiontext2">
-                     <p><p>COMITTEE</p></p>
+                     <p><p>COMMITTEE</p></p>
                  </div>
                 </div>
 

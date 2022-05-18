@@ -61,7 +61,7 @@ function ForumDetail(){
                 <Grid item xs={12}>
                     <div className="detail_title self_red_title">{detail.title}</div>
                     <div className="detail_content">
-                        test test test test test test test test test test test test test test test test test test test test test test
+                        Forum Content
                     </div>
                     <div className="detail_createTime">
                         03/04/2022

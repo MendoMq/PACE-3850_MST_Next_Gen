@@ -45,6 +45,7 @@ function LoginPage() {
                         style={{ margin: 10 }}
                     />
                     <TextField
+                        required
                         id="outlined-password-input"
                         label="Password"
                         type="password"
