@@ -49,6 +49,18 @@
   flex-direction: column;
 }
 
+#headerLinks {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+#loginHeader,
+#registerHeader {
+  /* position: absolute; */
+  margin: 10px;
+}
+
 #Header {
   display: flex;
   justify-content: space-evenly;
