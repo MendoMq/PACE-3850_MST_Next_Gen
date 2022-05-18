@@ -37,7 +37,7 @@ function App() {
     <div class="container">
       <div id="headerLinks">
         
-        <p style={{marginLeft: "10px"}}>MSTNG Proudly supported by <a href="https://supportmarianstreettheatre.com/">Support Marian St Theatre</a></p>
+        <p style={{marginLeft: "10px"}}>MSTNG Proudly supported by <a href="https://supportmarianstreettheatre.com/" id="SMSTLink" target="_blank">Support Marian St Theatre</a></p>
         <div>
           <ThemeProvider theme={theme}>
               <Button variant="contained" color="primary" id="loginHeader" style={{maxWidth: '80px', maxHeight: '30px', minWidth: '80px', minHeight: '30px', fontSize: '16px', fontFamily: "'Abel', Helvetica, Arial, Lucida, sans-serif"}}component={Link} to="/login">Login</Button>

@@ -1,6 +1,7 @@
 import React from "react";
 import "../App.css";
 import bannerImage from "../Media/BannerPicture.jpg";
+// https://unsplash.com/photos/dyJq7vzPeU8
 import Button from '@mui/material/Button';
 import {
     BrowserRouter as Router,
@@ -37,6 +38,7 @@ function HomePage(){
                         </ThemeProvider>
                     </div>
                 </div>
+                <p id="photoAttr">Photo by Wesley Pribadi on Unsplash</p>
                 
             </div>
             <div id="homePageMainContent">

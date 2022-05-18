@@ -55,6 +55,14 @@
   justify-content: space-between;
 }
 
+#SMSTLink {
+  color: #e02b20;
+}
+
+#SMSTLink:visited {
+  color: #e02b20;
+}
+
 #loginHeader,
 #registerHeader {
   /* position: absolute; */
@@ -119,6 +127,13 @@
 #register {
   /* position: absolute; */
   margin: 10px;
+}
+
+#photoAttr {
+  position: absolute;
+  bottom: 0;
+  margin-left: 10px;
+  opacity: 0.4
 }
 
 #homePageMainContent {
