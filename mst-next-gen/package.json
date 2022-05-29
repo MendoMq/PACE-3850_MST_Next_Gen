@@ -13,9 +13,13 @@
     "@testing-library/jest-dom": "^5.16.3",
     "@testing-library/react": "^12.1.4",
     "@testing-library/user-event": "^13.5.0",
+    "axios": "^0.27.2",
     "cors": "^2.8.5",
     "express": "^4.18.1",
+    "express-session": "^1.17.3",
     "flexbox-react": "^4.4.0",
+    "moment": "^2.29.3",
+    "mongoose": "^6.3.4",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-router-dom": "^6.3.0",
@@ -27,7 +31,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "server": "nodemon Server/server.js"
+    "server": "node Server/server.js",
+    "serverDev": "nodemon Server/server.js",
+    "initData": "node Server/db/initData.js"
   },
   "eslintConfig": {
     "extends": [

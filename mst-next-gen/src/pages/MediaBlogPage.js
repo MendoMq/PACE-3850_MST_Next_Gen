@@ -5,6 +5,8 @@ import Button from '@mui/material/Button';
 import BlogPost from "../components/BlogPost";
 
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import axios from '../utils/axios'
+import LoadingBox from "../components/LoadingBox";
 
 const theme = createTheme({
     status: {
@@ -26,19 +28,23 @@ function MediaBlogPage(){
     
 
     const getBlogPosts = () => {
-        fetch('BlogPosts.json', {
-            headers : { 
-                'Content-Type': 'application/json',
-                'Accept': 'application/json'
-                }
-            }
-        )
-        .then(function(data){
-            return data.json();
-          })
-        .then(function(jsonData) {
-            setBlogPosts(jsonData);
-        });
+        axios.get("/blog/list")
+        .then(res=>{
+            setBlogPosts(res);
+        })
+        // fetch('BlogPosts.json', {
+        //     headers : { 
+        //         'Content-Type': 'application/json',
+        //         'Accept': 'application/json'
+        //         }
+        //     }
+        // )
+        // .then(function(data){
+        //     return data.json();
+        //   })
+        // .then(function(jsonData) {
+        //     setBlogPosts(jsonData);
+        // });
     }
 
     const getMedia = () => {
@@ -100,15 +106,18 @@ function MediaBlogPage(){
             <div id="mediaBlogContainer">
                 <div id="blogContainer">
                     <p className="mediaBlogTitle">Blog</p>
-                    <div id="blogPosts">
-                        {blogPosts.map(post => 
-                            <BlogPost 
-                                title={post.title}
-                                description = {post.description}
-                                date = {post.date}
-                            /> 
-                        )}
-                    </div>
+                        <div id="blogPosts">
+                            <LoadingBox loading={true}>
+                                    {blogPosts.map(post => 
+                                        <BlogPost 
+                                            title={post.title}
+                                            description = {post.content}
+                                            date = {post.createTime}
+                                        /> 
+                                    )}
+                            </LoadingBox>
+                        </div>
+                    
                 </div>
                 <div id="mediaContainer">
                     <p className="mediaBlogTitle">Media</p>

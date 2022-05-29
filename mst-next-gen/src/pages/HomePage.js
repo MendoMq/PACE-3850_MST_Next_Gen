@@ -1,4 +1,4 @@
-import React from "react";
+import {useEffect, useState} from "react";
 import "../App.css";
 import bannerImage from "../Media/BannerPicture.jpg";
 // https://unsplash.com/photos/dyJq7vzPeU8
@@ -24,19 +24,24 @@ const theme = createTheme({
     },
   });
 
-function HomePage(){
+function HomePage(props){
+    const {hasLogin} = props
     return (
         <div>
             <div id="banner">
                 <img src={bannerImage} width={"100%"} id="bannerImage"/>
                 <div id="bannerContent">  
                     <p id="bannerText">The <span id="colouredBannerText">Next Gen</span>eration of Theatre</p>
-                    <div id="bannerButtons">
-                        <ThemeProvider theme={theme}>
-                            <Button variant="contained" color="primary" id="login" style={{maxWidth: '170px', maxHeight: '70px', minWidth: '170px', minHeight: '70px', fontSize: '26px', fontFamily: "'Abel', Helvetica, Arial, Lucida, sans-serif"}}component={Link} to="/login">Login</Button>
-                            <Button variant="contained" color="primary" id="register" style={{maxWidth: '170px', maxHeight: '70px', minWidth: '170px', minHeight: '70px', fontSize: '26px', fontFamily: "'Abel', Helvetica, Arial, Lucida, sans-serif"}} component={Link} to="/register">Register</Button>
-                        </ThemeProvider>
-                    </div>
+                    {
+                        !hasLogin&&
+                        <div id="bannerButtons">
+                            <ThemeProvider theme={theme}>
+                                <Button variant="contained" color="primary" id="login" style={{maxWidth: '170px', maxHeight: '70px', minWidth: '170px', minHeight: '70px', fontSize: '26px', fontFamily: "'Abel', Helvetica, Arial, Lucida, sans-serif"}}component={Link} to="/login">Login</Button>
+                                <Button variant="contained" color="primary" id="register" style={{maxWidth: '170px', maxHeight: '70px', minWidth: '170px', minHeight: '70px', fontSize: '26px', fontFamily: "'Abel', Helvetica, Arial, Lucida, sans-serif"}} component={Link} to="/register">Register</Button>
+                            </ThemeProvider>
+                        </div>
+                    }
+                    
                 </div>
                 <p id="photoAttr">Photo by Wesley Pribadi on Unsplash</p>
                 
@@ -57,7 +62,7 @@ function HomePage(){
                 <div id="sideBar">
                     <div id="SMSTTile">
                         <p className="SMSTTileText">Want to find out more about Support Marian Street Theatre?</p>
-                        <p className="SMSTTileText"><a href="https://supportmarianstreettheatre.com/" target="_blank" id="SMSTTileLink">Click Here</a> to go to their website</p>
+                        <p className="SMSTTileText"><a href="https://supportmarianstreettheatre.com/" target="_blank" id="SMSTTileLink" rel="noreferrer">Click Here</a> to go to their website</p>
                     </div>
                 </div>
             </div>            
