@@ -1,9 +1,10 @@
 const mongoose = require("mongoose")
 const Schema = mongoose.Schema;
 
-const blogSchema = new Schema({
+const mediaSchema = new Schema({
     title: String,
     content: String,
+    path: String,
     userId: { type: mongoose.Schema.Types.ObjectId },
     createTime: {
         type: Date,
@@ -17,4 +18,4 @@ const blogSchema = new Schema({
     timestamps: { createdAt: 'createTime', updatedAt: "updateTime" }
 });
 
-module.exports = mongoose.model('Blog', blogSchema);
+module.exports = mongoose.model('Media', mediaSchema);

@@ -18,6 +18,7 @@ axios.interceptors.response.use(
     (res) => {
         const {data} = res;
         if(data?.errMsg){
+            eventBus.emit("toast",{message:data.errMsg,type:"error"})
             return Promise.reject(data)
         }
         return data

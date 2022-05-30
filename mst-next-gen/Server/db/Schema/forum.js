@@ -1,20 +1,20 @@
 const mongoose = require("mongoose")
 const Schema = mongoose.Schema;
 
-const forumchema = new Schema({
-    title:String,
-    content:String,
-    userId:{type:mongoose.Schema.Types.ObjectId},
-    createTime:{
+const forumSchema = new Schema({
+    title: String,
+    content: String,
+    userId: { type: mongoose.Schema.Types.ObjectId },
+    createTime: {
         type: Date,
         default: Date.now
     },
-    updateTime:{
+    updateTime: {
         type: Date,
         default: Date.now
     }
-},{
-    timestamps: { createdAt: 'createTime', updatedAt: 'updateTime'}
+}, {
+    timestamps: { createdAt: 'createTime', updatedAt: 'updateTime' }
 });
 
-module.exports = mongoose.model('Forum', forumchema);
+module.exports = mongoose.model('Forum', forumSchema);

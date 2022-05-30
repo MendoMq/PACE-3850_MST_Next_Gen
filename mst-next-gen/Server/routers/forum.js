@@ -206,6 +206,44 @@ forumRouter.post("/like",async (req,res)=>{
 })
 
 
+forumRouter.put("/add",async (req,res)=>{
+    const {title,content,userId} = req.body
+    if(!title||!content||!userId){
+        return res.send({errMsg:"fail to params"})
+    }
+    let forum =await new Forum({
+        title,
+        content,
+        userId
+    }).save()
 
+    res.send(forum)
+})
+
+forumRouter.post("/edit",async (req,res)=>{
+    const {title,content,userId,_id} = req.body
+    if(!title||!content||!userId||!_id){
+        return res.send({errMsg:"fail to params"})
+    }
+    try{
+        let forum = await Forum.updateOne({_id},{title,content})
+        res.send(forum)
+    }catch{
+        res.send({errMsg:"fail to edit"})
+    }
+})
+
+forumRouter.delete("/delete/:id",async (req,res)=>{
+    const {id} = req.params
+    if(!id){
+        return res.send({errMsg:"fail to params"})
+    }
+    try{
+        let forum = await Forum.deleteOne({_id:id})
+        res.send(forum)
+    }catch{
+        res.send({errMsg:"fail to edit"})
+    }
+})
 
 module.exports = forumRouter
