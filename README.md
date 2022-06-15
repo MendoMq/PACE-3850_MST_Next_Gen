@@ -43,7 +43,18 @@ These are the packages installed in our project, they are not necessary for you 
 
 ## Database
 We have utilised a MongoDB database for this project. 
-The database is public, and you can access it by ... (SAMMY FILL OUT)
+We currently access the database with the account that is registered by student email. 
+It is public, and you can access it by this directory ""mst-next-gen>Server>db>config.js""
+We strongly suggest you to register a new MongoDB account for this project since this is my personal account.
+It is really easy, after you registered the account, it will generate a link like below.
+Just need to replace the link in dbURL in directory ""mst-next-gen>Server>db>config.js"".
+dbURL: 'mongodb+srv://sammyzzzzz:cxz13978@cluster0.yxp6nfp.mongodb.net/test'
+
+It is also recommend to download a software called MongoDB Compass to manage it.
+There is a file called initData.js in Server>db,
+you can delete it after you get the real data in the future.
+
+
 
 ## Other Notes
 There were some features that due to time constraints, we were not able to implement. Please see the slides from our final presentation (Deliverable 6) for most information on this. 
