@@ -32,7 +32,7 @@ These are the packages installed in our project, they are not necessary for you 
   <li>Navigate to the "mst-next-gen" folder (inside the downloaded folder) in the Terminal/Command Prompt (or you can right click on the folder in your File Explorer and open it in the Terminal/Command Prompt)</li>
 
   <img src="./mst-next-gen/commandPromptScreenshot.png" width = 600/>
-  <li>Enter the command "npm install -g nodemon" (this will install all of the packages needed to run the React application, and may take a bit of time)</li>
+  <li>Enter the command "npm install -g nodemon"</li>
   <li>Enter the command "npm install" (this will install all of the packages needed to run the React application, and may take a bit of time)</li>
   <li>Enter the command "npm run build"</li>
   <li>Enter the command "npm run server"</li>
@@ -42,18 +42,17 @@ These are the packages installed in our project, they are not necessary for you 
 </ol>
 
 ## Database
-We have utilised a MongoDB database for this project. 
-We currently access the database with the account that is registered by student email. 
-It is public, and you can access it by this directory ""mst-next-gen>Server>db>config.js""
-We strongly suggest you to register a new MongoDB account for this project since this is my personal account.
-It is really easy, after you registered the account, it will generate a link like below.
-Just need to replace the link in dbURL in directory ""mst-next-gen>Server>db>config.js"".
-dbURL: 'mongodb+srv://sammyzzzzz:cxz13978@cluster0.yxp6nfp.mongodb.net/test'
+We have utilised a MongoDB database for this project, and we currently access the database with an account that is registered with Xiaokai's student email. 
+It is public, and it is currently accessed in **config.js** in the directory **"mst-next-gen > Server > db"**
 
-It is also recommend to download a software called MongoDB Compass to manage it.
-There is a file called initData.js in Server>db,
+We strongly suggest that you register a new MongoDB account for this project since this is Xiaokai's personal account.
+After you register the account, it will generate a link like below.
+Then, you just need to replace the link in the dbURL variable in **config.js**, which you can find in the directory **"mst-next-gen > Server > db"**.
+> dbURL: 'mongodb+srv://sammyzzzzz:cxz13978@cluster0.yxp6nfp.mongodb.net/test'
+
+We also recommend downloading a program called MongoDB Compass to manage the database.
+There is a file called **initData.js** in **"Server > db"**,
 you can delete it after you get the real data in the future.
-
 
 
 ## Other Notes
